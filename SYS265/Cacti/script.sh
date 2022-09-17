@@ -36,6 +36,7 @@ firewall-cmd --permanent --add-port 8081/tcp
 firewall-cmd --permanent --add-port 3030/tcp
 firewall-cmd --permanent --add-port 3031/tcp
 firewall-cmd --permanent --add-port 8125/udp
+firewall-cmd --reload
 echo ""
 echo $'\e[1;32m'"Login to the link below using the credentials you set"$'\e[0m'
 echo ""
