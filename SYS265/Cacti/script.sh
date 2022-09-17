@@ -26,5 +26,17 @@ curl http://127.0.0.1:8080/health
 echo ""
 echo $'\e[1;32m'"Healthy is set to True?"$'\e[0m'
 echo ""
+echo "Configuring Firwall"
+firewall-cmd --permanent --add-port 2379/tcp
+firewall-cmd --permanent --add-port 2380/tcp
+firewall-cmd --permanent --add-port 3000/tcp
+firewall-cmd --permanent --add-port 6060/tcp
+firewall-cmd --permanent --add-port 8080/tcp
+firewall-cmd --permanent --add-port 8081/tcp
+firewall-cmd --permanent --add-port 3030/tcp
+firewall-cmd --permanent --add-port 3031/tcp
+firewall-cmd --permanent --add-port 8125/udp
+echo ""
 echo $'\e[1;32m'"Login to the link below using the credentials you set"$'\e[0m'
-echo $'\e[1;32m'"http://localhost:3000/"$'\e[0m'
+echo ""
+echo $'\e[1;31m'"http://localhost:3000/"$'\e[0m'
