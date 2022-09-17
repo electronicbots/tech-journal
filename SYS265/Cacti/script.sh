@@ -26,7 +26,7 @@ curl http://127.0.0.1:8080/health
 echo ""
 echo $'\e[1;32m'"Healthy is set to True?"$'\e[0m'
 echo ""
-echo "Configuring Firwall"
+echo $'\e[1;32m'"Configuring Firwall"$'\e[0m'
 firewall-cmd --permanent --add-port 2379/tcp
 firewall-cmd --permanent --add-port 2380/tcp
 firewall-cmd --permanent --add-port 3000/tcp
