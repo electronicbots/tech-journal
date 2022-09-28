@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Passw0rd</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
-        <h2>Register</h2>
+        <h2>Is my password strong?</h2>
   </div>
 
   <form method="post" action="index.php">
