@@ -10,7 +10,7 @@
         <h2>Register</h2>
   </div>
 
-  <form method="post" action="password.php">
+  <form method="post" action="index.php">
         <?php include('errors.php'); ?>
         <div class="input-group">
           <label>Password</label>
